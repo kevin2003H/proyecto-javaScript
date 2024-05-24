@@ -1,0 +1,373 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(imagenes/fondo\ pagina\ web.jpg) ;
+    
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el contenedor del logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 80px; /* Ajustar el tamaño del logo */
+    margin-right: 20px; /* Espacio entre el logo y el texto */
+}
+
+/* Estilos para la navegación */
+nav {
+    margin-right: auto; /* Centrar horizontalmente */
+    margin-left: auto; /* Centrar horizontalmente */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar horizontalmente */
+    margin: 0;
+    padding: 0;
+    gap: 100px;
+}
+
+nav ul l1 {
+    margin-right: 20px; /* Ajustar el espacio entre los elementos del menú */
+}
+
+nav ul l1:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último elemento */
+}
+
+
+/* Añadí la transición aquí */
+nav ul l1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Ajustar el tamaño de la fuente */
+    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+    padding: 5px 10px; /* Espacio alrededor del texto */
+}
+
+/* Añadí el estilo al pasar el mouse aquí */
+nav ul l1 a:hover {
+    opacity: 0; /* Desaparecer el texto al pasar el mouse */
+}  
+
+main {
+    padding: 20px;
+}
+
+
+
+/* Estilos para la sección del menú */
+.menu-section {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para cada elemento de desayuno */
+.item {
+    position: relative;
+    margin: 20px;
+    text-align: center; /* Para centrar el texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px; /* Espacio entre elementos */
+}
+
+.item img {
+    width: 100%;
+    margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+}
+
+/* Añadí la transición aquí */
+.quick-view {
+    background-color: #333;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px; /* Espacio entre la imagen y el botón */
+    margin-bottom: 10px; /* Espacio entre el botón y el borde inferior del elemento */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+/* Añadí el estilo al pasar el mouse aquí */
+.quick-view:hover {
+    background-color: #555;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+   
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inicio-section {
+     /* Color de fondo blanco */
+    color: black; /* Texto negro */
+    text-align: center; /* Centrar el contenido */
+    padding: 50px; /* Espacio interior */
+}
+
+.container {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrar horizontalmente */
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espacio interior */
+    border-radius: 10px; /* Borde redondeado */
+    display: flex; /* Cambiar a un contenedor flexible */
+    flex-direction: column; /* Apilar los elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente los elementos */
+    justify-content: center; /* Centrar verticalmente los elementos */
+}
+
+
+.container h1,
+.container p {
+    margin-bottom: 20px; /* Espacio entre los elementos */
+}
+
+.container img {
+    max-width: 50%; /* Reduciendo el ancho máximo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 20px; /* Espacio entre la imagen y los textos */
+}
+
+.sotial-network{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 2em;
+  }
+  .sotial-network a {
+    margin-right: 20px; /* Añade un margen derecho de 20px para separar los iconos */
+  }
+
+  .sotial-network a i {
+    font-size: 50px; /* Tamaño más grande para los íconos */
+    color: #fff; /* Cambia el color de los íconos */
+}
+
+
+.menu-section {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    margin: 20px; /* Margen uniforme alrededor de cada elemento */
+    text-align: center; /* Centrar el contenido */
+    flex: 1 0 400px; /* Establece el tamaño base de los elementos */
+    max-width: 400px; /* Establece el ancho máximo de los elementos */
+}
+
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+/*proyecgto menu principal*/
+#productos {
+    background-color: #0a0000;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+#productos .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#productos h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+#productos .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#productos .fila {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#productos .col {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#productos .Proyecto {
+    position: relative;
+    width: 300px; /* Establecer un ancho uniforme para los proyectos */
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Alinea el contenido verticalmente */
+    align-items: center;
+    overflow: hidden; /* Evitar que las imágenes se desborden del contenedor */
+}
+
+#productos .Proyecto img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente */
+    display: block;
+    object-fit: cover; /* Ajustar la imagen para que cubra todo el contenedor */
+    max-width: 100%; /* Evita que las imágenes se desborden del contenedor */
+    max-height: 100%; /* Evita que las imágenes se desborden del contenedor */
+}
+
+#productos .Proyecto .overlay {
+    position: absolute;
+    bottom: 0; /* Posiciona el overlay en la parte inferior del contenedor */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el texto */
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 20px; /* Espacio alrededor del texto */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+#productos .Proyecto .overlay h3,
+#productos .Proyecto .overlay p {
+    margin: 0; /* Elimina el margen predeterminado */
+    color: #fff; /* Color del texto */
+    transition: color 0.3s; /* Agrega una transición suave para el cambio de color */
+}
+
+#productos .Proyecto .overlay:hover h3,
+#productos .Proyecto .overlay:hover p {
+    color: #1CB698; /* Cambia el color del texto al pasar el mouse sobre el overlay */
+}
+
+#productos .Proyecto .overlay i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #fff; /* Color de los íconos */
+    text-align: center; /* Centrar el ícono horizontalmente */
+    transition: color 0.3s; /* Agrega una transición suave para el cambio de color */
+}
+
+#productos .Proyecto .overlay:hover i {
+    color: #1CB698; /* Cambia el color del ícono al pasar el mouse sobre el overlay */
+}
+/* seccion servicios */
+#servicios {
+   
+    color: #fff;
+    padding: 50px 20px;
+}
+
+#servicios .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#servicios h2 {
+    font-size: 48px;
+    font-family: 'Righteous', sans-serif;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#servicios .servicios-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#servicios .txt {
+    flex: 1 1 300px;
+    margin: 10px; /* Reduce el margen */
+    padding: 20px; /* Mantén el padding */
+    border-radius: 10px;
+}
+
+#servicios .txt h4 {
+    font-size: 24px;
+    margin-bottom: 10px; /* Ajusta el margen inferior */
+}
+
+#servicios .txt p {
+    margin: 5px 0; /* Ajusta el margen */
+}
+
+#servicios .sotial-network {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#servicios .sotial-network a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+#servicios .sotial-network a:hover {
+    color: #1CB698;
+}
+
+/* Mapa*/
+#map{
+    filter: grayscale(100%) invert(92%) contrast(93%);
+    
+    
+}
+

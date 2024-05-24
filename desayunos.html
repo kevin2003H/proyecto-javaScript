@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="desayuno.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="imagenes/logo-mexicano.jpg" alt="Logo del Restaurante">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="desayunos.html">Desayunos</a></li>
+                <li><a href="almuerzos.html">Almuerzos</a></li>
+                <li><a href="comidas.html">Comida</a></li>
+                <li><a href="entradas.html">Entradas</a></li>
+                <li><a href="menu-infantil.html">Menú Infantil</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="item1">
+        <div class="item-content">
+            <div class="image-container">
+                <img src="imagenes/chilaquines.desayuno.jpg" alt="chilaquiles">
+                <button class="quick-view">Vista Rápida</button>
+            </div>
+            <h1>Chilaquiles</h1>
+            <p>Los chilaquiles son de los desayunos mexicanos más icónicos. Se preparan a base de trocitos de tortilla de maíz fritos (o tostados) o de totopos, y se bañan en salsa de chile verde o roja.</p>
+            <span class="precio">$15.500</span>
+        </div>
+    </div>
+
+    <div class="item1">
+        <div class="item-content">
+            <div class="image-container">
+                <img src="imagenes/birria-desayuno.jpg" alt="birria">
+                <button class="quick-view">Vista Rápida</button>
+            </div>
+            <h1>Birria</h1>
+            <p>La birria está recomendada para cuando la cruda (borrachera) es intensa. Es un guiso de carne original de Jalisco, que se puede preparar con cualquier tipo de carne.</p>
+            <span class="precio">$15.500</span>
+        </div>
+    </div>
+
+    <div class="item1">
+        <div class="item-content">
+            <div class="image-container">
+                <img src="imagenes/huevosalamexica-desayuno.jpg" alt="huevos a la mexicana">
+                <button class="quick-view">Vista Rápida</button>
+            </div>
+            <h1>Huevos a la Mexicana</h1>
+            <p>Se fríen los tomates, la cebolla y el chile y se le agregan los huevos, que pueden batirse previamente o no. Se sirven con tortillas, claro.</p>
+            <span class="precio">$15.500</span>
+        </div>
+    </div>
+    
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image1" src="" alt="">
+            <h1 id="modal-title1"></h1>
+            <p id="modal-description1"></p>
+            <span id="modal-price1" class="precio"></span>
+        </div>
+    </div>
+
+    <script src="desayuno.js"></script>
+</body>
+</html>

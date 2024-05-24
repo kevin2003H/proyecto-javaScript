@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almuerzos</title>
+    <link rel="stylesheet" href="almuerzo.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="imagenes/logo-mexicano.jpg" alt="Logo del Restaurante">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="desayunos.html">Desayunos</a></li>
+                <li><a href="almuerzos.html">Almuerzos</a></li>
+                <li><a href="comidas.html">Comida</a></li>
+                <li><a href="entradas.html">Entradas</a></li>
+                <li><a href="menu-infantil.html">Menú Infantil</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="item">
+        <div class="item-content">
+            <div class="image-container">
+                <img src="imagenes/almuerzo.pozole.jpg" alt="almuerzos">
+                <button class="quick-view">Vista Rápida</button>
+            </div>
+            <h1>POZOLE</h1>
+            <p>Es un caldo tradicional mexicano hecho a base de granos de maíz nixtamalizados.</p>
+            <span class="precio">$25.000</span>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="item-content">
+            <div class="image-container">
+                <img src="imagenes/barbacoa-almuerzo.jpg" alt="almuerzos">
+                <button class="quick-view">Vista Rápida</button>
+            </div>
+            <h1>CARNITAS</h1>
+            <p>Búsqueda de sabores, sazón y riqueza, hay quienes agregan al perol de las carnitas ingredientes exóticos como frutas, chiles, azúcar, leche o refrescos.</p>
+            <span class="precio">$30.000</span>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="item-content">
+            <div class="image-container">
+                <img src="imagenes/chiles.almuerzo.jpg" alt="Almuerzos">
+                <button class="quick-view">Vista Rápida</button>
+            </div>
+            <h1>CHILES EN NOGADA</h1>
+            <p>Consiste en un chile poblano relleno de carne de res y puerco, mezclados con fruta: plátano, manzana, pera, durazno y bañados con una salsa de nuez.</p>
+            <span class="precio">$15.500</span>
+        </div>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image1" src="" alt="">
+            <h1 id="modal-title1"></h1>
+            <p id="modal-description1"></p>
+            <span id="modal-price1" class="precio"></span>
+        </div>
+    </div>
+    
+    <script src="almuerzo.js"></script>
+</body>
+</html>
+

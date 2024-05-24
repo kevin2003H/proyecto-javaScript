@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidas</title>
+    <link rel="stylesheet" href="comida.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="imagenes/logo-mexicano.jpg" alt="Logo del Restaurante">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="desayunos.html">Desayunos</a></li>
+                <li><a href="almuerzos.html">Almuerzos</a></li>
+                <li><a href="comidas.html">Comida</a></li>
+                <li><a href="entradas.html">Entradas</a></li>
+                <li><a href="menu-infantil.html">Menú Infantil</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="item2">
+        <div class="item-content">
+            <div class="image-container">
+                <img src="imagenes/quesadillas.comida.jpg" alt="comidas">
+                <button class="quick-view">Vista Rápida</button>
+            </div>
+            <h1>QUESADILLAS</h1>
+            <p>Es un platillo mexicano que consiste en una tortilla de maíz, o también de trigo, doblada por la mitad que, dependiendo de la región, puede estar rellena de queso o de otros ingredientes y que se come caliente, ya sea frita o cocida en el comal.</p>
+            <span class="precio">$20.000</span>
+        </div>
+    </div>
+
+    <div class="item2">
+        <div class="item-content">
+            <div class="image-container">
+                <img src="imagenes/cochinita.comida.jpg" alt="comidas">
+                <button class="quick-view">Vista Rápida</button>
+            </div>
+            <h1>COCHINITAS</h1>
+            <p>La cochinita pibil es un guiso correspondiente a la gastronomía de Yucatán, basado en carne de cerdo adobada en achiote, envuelta en hoja de plátano y cocida dentro de un horno de tierra.</p>
+            <span class="precio">$30.000</span>
+        </div>
+    </div>
+
+    <div class="item2">
+        <div class="item-content">
+            <div class="image-container">
+                <img src="imagenes/tacos.comida.jpg" alt="comidas">
+                <button class="quick-view">Vista Rápida</button>
+            </div>
+            <h1>TACOS</h1>
+            <p>Una preparación culinaria muy popular de México que consiste en una tortilla, generalmente de maíz, que comúnmente se enrolla para contener dentro diversos ingredientes y algún tipo de salsa y verdura.</p>
+            <span class="precio">$20.000</span>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image2" src="" alt="">
+            <h1 id="modal-title2"></h1> <!-- Añadido para el título del modal -->
+            <div id="modal-description2"></div>
+            <span id="modal-price2" class="precio"></span>   
+        </div>
+    </div>
+
+    <script src="comida.js"></script>
+</body>
+</html>

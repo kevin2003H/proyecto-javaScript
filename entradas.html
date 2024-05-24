@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="entradas.css">
+  
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="imagenes/logo-mexicano.jpg" alt="Logo del Restaurante">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="desayunos.html">Desayunos</a></li>
+                <li><a href="almuerzos.html">Almuerzos</a></li>
+                <li><a href="comidas.html">Comida</a></li>
+                <li><a href="entradas.html">Entradas</a></li>
+                <li><a href="menu-infantil.html">Menú Infantil</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="item3">
+        <div class="item-content">
+            <div class="image-container">
+                <div class="image-container">
+                    <img src="imagenes/empanadascambio-entradas.jpg" alt="almuerzos">
+                    <button class="quick-view" onclick="openModal('pozole')">Vista Rápida</button>
+                </div>
+                <button class="quick-view">Vista Rápida</button>
+            </div>
+            <h1>empanadas de esquina x5</h1>
+            <p> Deliciosas empanadas de maíz hechas a mano, rellenitas de soya tex, papa y guiso. Acompañadas con limón y pico de gallo.</p>
+            <span class="precio">$13.500</span>
+        </div>
+    </div>
+    
+    <div class="item3">
+        <div class="item-content">
+            <div class="image-container">
+                <img src="imagenes/nachos1-entradas.jpg" alt="almuerzos">
+                <button class="quick-view" onclick="openModal('pozole')">Vista Rápida</button>
+            </div>
+            <h1>nachotes-green</h1>
+            <p>Nachos de maíz con pico de gallo, maiz tierno, guacamole, bañados en cheddar liquido</p>
+            <span class="precio">$21.500</span>
+        </div>
+    </div>
+    
+    <div class="item3">
+        <div class="item-content">
+            <div class="image-container">
+                <img src="imagenes/nachoschedarcambio-entradas.jpg" alt="almuerzos">
+                <button class="quick-view" onclick="openModal('pozole')">Vista Rápida</button>
+            </div>
+            <h1>Nachos con cheddar</h1>
+            <p>Nachos de maíz bañados con cheddar vegano, acompañados con pico de gallo y guacamole</p>
+            <span class="precio">$15.500</span>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image3" src="" alt="">
+            <h1 id="modal-title3"></h1>
+            <div id="modal-description3"></div>
+            <span id="modal-price3" class="precio"></span>    
+        </div>
+    </div>
+    
+    <script src="entrada.js"></script>
+    
+</body>
+</html>

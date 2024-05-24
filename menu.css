@@ -1,0 +1,352 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(imagenes/fondo\ pagina\ web.jpg) ;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el contenedor del logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 80px; /* Ajustar el tamaño del logo */
+    margin-right: 20px; /* Espacio entre el logo y el texto */
+}
+nav {
+    margin-right: auto; /* Centrar horizontalmente */
+    margin-left: auto; /* Centrar horizontalmente */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar horizontalmente */
+    margin: 0;
+    padding: 0;
+    gap: 100px;
+}
+
+nav ul li {
+    margin-right: 20px; /* Ajustar el espacio entre los elementos del menú */
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: opacity 0.3s ease; 
+    padding: 5px 10px; 
+}
+
+nav ul li a:hover {
+    opacity: 0; 
+}
+
+
+
+
+ /* ALMUERZO*/
+.item {
+    display: inline-block; 
+    margin: 50px; 
+}
+.item-content {
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 10px; /* Espacio alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 300px; /* Ancho máximo del contenedor */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de elevación */
+    margin-left: 50px;
+}
+.item img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px 10px 0 0; 
+}
+.precio {
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+  }
+
+
+
+
+/* COMIDA */
+.item2 {
+    display: inline-block; 
+    margin: 50px; 
+}
+.item2-content {
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 10px; 
+    border-radius: 10px; 
+    max-width: 300px; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de elevación */
+    margin-left: 50px;
+}
+.item2 img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px 10px 0 0; 
+}
+.precio {
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+ /* MENU INFANTIL */
+ .item4-menu {
+    display: inline-block; /* Para que los elementos floten en línea */
+    margin: 50px; /* Espacio entre los elementos */
+}
+.item4-menu-content {
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 10px; /* Espacio alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 300px; /* Ancho máximo del contenedor */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de elevación */
+    margin-left: 50px;
+}
+.item4-menu img {
+    width: 100%; /* Ajusta el ancho de la imagen para que se ajuste al contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados para la parte superior de la imagen */
+}
+.precio {
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+  } 
+.item4 {
+    display: inline-block; /* Para que los elementos floten en línea */
+    margin: 50px; /* Espacio entre los elementos */
+}
+.item4-content {
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 10px; /* Espacio alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 300px; /* Ancho máximo del contenedor */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de elevación */
+    margin-left: 50px;
+}
+.item4 img {
+    width: 100%; /* Ajusta el ancho de la imagen para que se ajuste al contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados para la parte superior de la imagen */
+}
+.precio {
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+  }  
+.quick-view {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #2980b9;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transform: translateY(100%);
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+.image-container:hover img {
+   
+    filter: blur(5px);
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+.image-container:hover .quick-view {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+     }
+
+.modal.show {
+    display: flex; 
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #555; /* Cambia el color al pasar el mouse */
+}
+.modal-info h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.modal-info p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.modal-info .precio {
+    font-weight: bold;
+    color: #27ae60; /* Color verde para el precio */
+    /* Estilos para el modal */
+
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+}
+.close:hover {
+    color: #555; /* Cambia el color al pasar el mouse */
+}
+.modal-info h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.modal-info p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.modal-info .precio {
+    font-weight: bold;
+    color: #27ae60; /* Color verde para el precio */
+    text-align: center;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  

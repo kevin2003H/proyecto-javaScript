@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(imagenes/fondo\ pagina\ web.jpg);
+    background-size: cover;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 80px;
+    margin-right: 20px;
+}
+
+nav {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 100px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: opacity 0.3s ease;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    opacity: 0;
+}
+
+/* Estilos existentes */
+.item5 {
+    display: inline-block; /* Para que los elementos floten en línea */
+    margin: 50px; /* Espacio entre los elementos */
+}
+.item5-content {
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 10px; /* Espacio alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 300px; /* Ancho máximo del contenedor */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de elevación */
+    margin-left: 50px;
+}
+
+.item5 img {
+    width: 100%; /* Ajusta el ancho de la imagen para que se ajuste al contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados para la parte superior de la imagen */
+}
+
+.precio {
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+  } 
+
+
+.item5 {
+    display: inline-block; /* Para que los elementos floten en línea */
+    margin: 50px; /* Espacio entre los elementos */
+}
+
+
+.item-content {
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 10px; /* Espacio alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 300px; /* Ancho máximo del contenedor */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de elevación */
+    margin-left: 50px;
+}
+
+.item img {
+    width: 100%; /* Ajusta el ancho de la imagen para que se ajuste al contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados para la parte superior de la imagen */
+}
+
+.precio {
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+  }  
+.quick-view {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #080b0e;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+.image-container:hover .quick-view:hover {
+    background-color: rgba(255, 255, 255, 0.9); /*pasa el mouse sobre el botón dentro de la imagen */
+    color: black; /* Cambia el color del texto se pasa el mouse sobre el botón dentro de la imagen */
+  }
+
+.image-container:hover img {
+   
+    filter: blur(5px);
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+
+.image-container:hover .quick-view {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+     }
+
+.modal.show {
+    display: flex; 
+}
+
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal.show .modal-content {
+    animation: fadeInScale 0.3s ease-out;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  
